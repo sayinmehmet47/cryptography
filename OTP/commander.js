@@ -14,5 +14,9 @@ function encrypt(message) {
 }
 
 const msg1 = Buffer.from("Commander Henrique: Standby to launch.");
+const msg2 = Buffer.from("Commander Henrique: Launching in 10 seconds.");
 const msg1Encrypted = encrypt(msg1);
 console.log("msg1Encrypted", msg1Encrypted);
+
+const msg2Encrypted = encrypt(msg2);
+console.log("msg2Encrypted", msg2Encrypted);
