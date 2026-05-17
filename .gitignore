@@ -13,3 +13,6 @@ digital-signatures/public.pem
 
 # OS files
 .DS_Store
+
+
+sops/teammate-key.txt
