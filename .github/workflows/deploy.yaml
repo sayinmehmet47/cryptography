@@ -1,0 +1,23 @@
+name: Decrypt SOPS Secrets
+on: [push]
+jobs:
+  decrypt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install SOPS
+        run: |
+          curl -LO https://github.com/getsops/sops/releases/download/v3.8.1/sops-v3.8.1.linux.amd64
+          mv sops-v3.8.1.linux.amd64 /usr/local/bin/sops
+          chmod +x /usr/local/bin/sops
+      - name: Decrypt Config
+        run: |
+          # Set the secret key for SOPS to use
+          echo "${{ secrets.SOPS_AGE_KEY }}" > age-key.txt
+          export SOPS_AGE_KEY_FILE=age-key.txt
+
+          # Decrypt the file
+          sops -d sops/config.enc.yaml > decrypted-config.yaml
+
+          # Show that it worked (don't do this in real production logs!)
+          cat decrypted-config.yaml
