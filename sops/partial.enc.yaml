@@ -1,0 +1,23 @@
+database:
+    host: localhost
+    port: 5432
+    username: admin
+    password_secret: ENC[AES256_GCM,data:FbDgx0h/psukGvKNI0la0Mpc7R84,iv:kFiiSZv75ekmE/tXT6d0e0BmjCsdh3JWfYukAbS29GQ=,tag:h4AcisS9hF7/opPP1Okq/Q==,type:str]
+api:
+    key_secret: ENC[AES256_GCM,data:e50g3GQQwBwPL7SKcw==,iv:hhOhpJjF0GpQPSDYLeJeYe8sy+fuGK4AOsgyFLH3XSI=,tag:IGYA1j7vDBtAd9NTjqnsnA==,type:str]
+    public_endpoint: https://api.example.com
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkeW8yZTFDcUdHaHlNbUZx
+            S25xKytDZDJwMkZoNDRhR0h3NkJ3ZjB5RFRrClV2eEZFcUhKT1Y5bjFIZVJDSll4
+            c25TcEYxanRySkJ0NVovbWFMSm1rcmcKLS0tIGZYOHUzbTFtQVdZMGJQMWJZZnVs
+            VlpmRk1JYmdjRkdwQW9VUjdwaHVqblEKVLY0KGT1Qki6wYGHpmKoSeex4Og2N3Gh
+            fj7vKiqS8hm6HIs78NrH0KMx3TEW7IcFhJse74EtdLRHrPkocqbB3w==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1jq7hcntklunzhpdr99lnf0sr93kafkww3qe5ycc70xj7yp8uu94q27rwld
+    encrypted_suffix: _secret
+    lastmodified: "2026-05-17T12:15:22Z"
+    mac: ENC[AES256_GCM,data:ONcA7VSSI22nLmdEYouwu0ZesnUbasH+S+Td4So3pBmAIHFxpBvNr8Impwk8qMVhVt+L2mpBJt4h89Sa66xGmosJcAQOZF3qkkBLu5fCUKGNAZHyamZFCiM2t8tGc4z3EsagSIV/0WWsb1pr8x8G4cJ8MXDJ9SLy6r6Y51ReiCo=,iv:8Jed3pC0m7nhCPkV9wHZGj20+NkWZiE2SHoBHBgVCHk=,tag:3QIflZa0m7I5z7/cKXfq0g==,type:str]
+    version: 3.13.1

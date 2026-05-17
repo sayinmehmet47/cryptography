@@ -1,3 +1,4 @@
 creation_rules:
-  - path_regex: \.(yaml|env)
+  - path_regex: \.(yaml|env)$
     age: age1jq7hcntklunzhpdr99lnf0sr93kafkww3qe5ycc70xj7yp8uu94q27rwld
+    encrypted_suffix: _secret
