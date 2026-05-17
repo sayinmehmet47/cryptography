@@ -17,3 +17,6 @@ digital-signatures/public.pem
 
 sops/teammate-key.txt
 sops/secrets.env
+
+sops/config.yaml
+sops/secrets.env
