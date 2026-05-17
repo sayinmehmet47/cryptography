@@ -1,0 +1,15 @@
+sops/key.txt
+sops/config.yaml
+
+# Node modules
+argon2/node_modules/
+
+# Digital signatures keys
+digital-signatures/private.pem
+digital-signatures/public.pem
+
+# OS files
+.DS_Store
+
+# OS files
+.DS_Store
